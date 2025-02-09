@@ -1,0 +1,158 @@
+.movieTicketContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 15% 0 15%
+}
+.movieTicketInfo{
+    color: white;
+}
+.movieTimesTicket{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.movieTimesTicket p{
+    background-color: rgb(29, 29, 253);
+    width: 4vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.movieTimesTicket p:hover{
+    background-color: rgb(41, 104, 251);
+}
+.theaterP{
+    text-align: left;
+}
+.highlight {
+    background-color: rgba(4, 0, 255, 0.577) !important;
+    font-weight: bold;
+}
+.datePicker{
+    text-align: center;
+}
+.buyTicket{
+    background-color: rgb(29, 29, 253);
+    border-radius: 10px;
+  
+    width: 8vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 8px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.buyTicketContainer {
+    display: flex;
+    justify-content: center;
+}
+.buyTicket:hover{
+    background-color: rgb(41, 104, 251);
+}
+.ticketImg{
+    filter: invert(1) brightness(100%);
+}
+.ticketAmount{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#ticketCount{
+    cursor:default
+}
+.ticketButton{
+    background-color: rgb(29, 29, 253);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.popup{
+    background-color: blue;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
+    pointer-events:auto;
+}
+body.popup-open {
+    overflow: hidden;
+    pointer-events: none;
+  }
+.popup button{
+    pointer-events: auto;
+    cursor: pointer; 
+}
+.error{
+    text-align: center;
+}
+.movieTitleReciept{
+    font-size:20px;
+}
+.playtimeHall {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.closePopup {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 8%;
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .buyTicket{
+        min-width: 10vw;
+    }
+    .movieTimesTicket p{
+        min-width: 5vw;
+    }
+  }
+
+@media only screen and (max-width: 950px) {
+    .movieTicketContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 15% 0 15%;
+    }
+    .buyTicket{
+        min-width: 20vw;
+    }
+    .movieTimesTicket p{
+        min-width: 10vw;
+    }
+  }

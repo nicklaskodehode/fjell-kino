@@ -1,0 +1,31 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 15% 0 15%;
+    color: white;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.emailField{
+    width: 20vw;
+    height: 3vh;
+}
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    height: 20vh;
+}
+.confirmation{
+    color: rgb(0, 214, 0);
+    transition: 0.5s ease-in-out;
+}
