@@ -1,44 +1,23 @@
 import './Accessibility.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export const Accessibility = () => {
-    const selectedTheme = localStorage.getItem("selectedTheme");
+  const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("selectedTheme") === "dark");
     
-    const setDarkTheme = () => {
-        document.querySelector("body").style.backgroundColor ="#1c1c3d";
-        document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, b, label").forEach(el => {
-            if (!el.closest(".movieTimesTicket, .movieTimes, buyTicket p")) {
-                el.style.color = "white";
-            }
-        });
-        localStorage.setItem("selectedTheme", "dark");
-      };
-    const setLightTheme = () => {
-        document.querySelector("body").style.backgroundColor ="white";
-        document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, b, label").forEach(el => {
-            if (!el.closest(".movieTimesTicket, .movieTimes, buyTicket p")) {
-                el.style.color = "black";
-            }
-        });
-        localStorage.setItem("selectedTheme", "light");
-    };
+  const toggleTheme = () => {
+    setIsDarkMode((prev) => !prev);
+  };
 
     useEffect(() => {
-        if (selectedTheme === "light") {
-            setLightTheme();
-        } else {
-            setDarkTheme();
-        }
-    }, []);
-
-      const toggleTheme = (e) => {
-        if (e.target.checked) {
-          setDarkTheme();
-        } else {
-          setLightTheme();
-        }
-      };
+      if (!isDarkMode) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("selectedTheme", "dark");
+      } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("selectedTheme", "light");
+      }
+    }, [isDarkMode]);
 
     return (
         <div className="dark_mode">
@@ -47,7 +26,7 @@ export const Accessibility = () => {
           type="checkbox"
           id="darkmode-toggle"
           onChange={toggleTheme}
-          defaultChecked={selectedTheme !== "light"}
+          checked={isDarkMode}
         />
   
         <label className="dark_mode_label" htmlFor="darkmode-toggle">

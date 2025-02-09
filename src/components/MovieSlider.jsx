@@ -25,7 +25,7 @@ export const MovieSlider = (props) => {
               <div className="movie">
                 <img className="slideImg" src={movie.img} alt={movie.title} width="280px" height="420px" />
                 <h2>{movie.title}</h2>
-                <p>Release: {movie.release}</p>
+                <p className="release">Release: {movie.release}</p>
               </div>
             </div>
           ))}

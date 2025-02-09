@@ -10,7 +10,7 @@ export const Footer = () => {
               Address: <i>Fjellavegen 5357, FJELL</i>
             </p>
           </div>
-          <p>
+          <p className='contactMail'>
             Contact: <i>kontakt@fjellkino.no</i>
           </p>
         </div>
