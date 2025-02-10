@@ -1,7 +1,8 @@
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import './MovieGrid.css'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './MovieGrid.css';
+import starIcon from "../assets/star.png";
 
 export const MovieGrid = ({onSelectedMovieTime,actionMovies,comedyMovies,scifiMovies,animationMovies,dramaMovies}) => {
 
@@ -28,7 +29,7 @@ export const MovieGrid = ({onSelectedMovieTime,actionMovies,comedyMovies,scifiMo
                 <p>Theater: {movie.hall}</p>
                 <div className="flex-rating">
                   <p>{movie.rating}</p>
-                  <img src="./src/assets/star.png" width="20px" height="20px" alt="Rating Star"/>
+                  <img src={starIcon} width="20px" height="20px" alt="Rating Star"/>
                 </div>
                 </div>
                 <div className="movieTimes">
@@ -55,7 +56,7 @@ export const MovieGrid = ({onSelectedMovieTime,actionMovies,comedyMovies,scifiMo
                 <p>Theater: {movie.hall}</p>
                 <div className="flex-rating">
                   <p>{movie.rating}</p>
-                  <img src="./src/assets/star.png" width="20px" height="20px" alt="Rating Star" />
+                  <img src={starIcon} width="20px" height="20px" alt="Rating Star" />
                 </div>
                 </div>
                 <div className="movieTimes">
@@ -82,7 +83,7 @@ export const MovieGrid = ({onSelectedMovieTime,actionMovies,comedyMovies,scifiMo
                 <p>Theater: {movie.hall}</p>
                 <div className="flex-rating">
                   <p>{movie.rating}</p>
-                  <img src="./src/assets/star.png" width="20px" height="20px" alt="Rating Star"/>
+                  <img src={starIcon} width="20px" height="20px" alt="Rating Star"/>
                 </div>
                 </div>
                 <div className="movieTimes">
@@ -109,7 +110,7 @@ export const MovieGrid = ({onSelectedMovieTime,actionMovies,comedyMovies,scifiMo
                 <p>Theater: {movie.hall}</p>
                 <div className="flex-rating">
                   <p>{movie.rating}</p>
-                  <img src="./src/assets/star.png" width="20px" height="20px" alt="Rating Star"/>
+                  <img src={starIcon} width="20px" height="20px" alt="Rating Star"/>
                 </div>
                 </div>
                 <div className="movieTimes">
@@ -136,7 +137,7 @@ export const MovieGrid = ({onSelectedMovieTime,actionMovies,comedyMovies,scifiMo
                 <p>Theater: {movie.hall}</p>
                 <div className="flex-rating">
                   <p>{movie.rating}</p>
-                  <img src="./src/assets/star.png" width="20px" height="20px" alt="Rating Star"/>
+                  <img src={starIcon} width="20px" height="20px" alt="Rating Star"/>
                 </div>
                 </div>
                 <div className="movieTimes">

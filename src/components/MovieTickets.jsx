@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './MovieTickets.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import starIcon from "../assets/star.png";
+import ticketIcon from "../assets/tickets.png";
 
 export const MovieTickets = ({selectedMovie, selectedTime, setSelectedMovie, setSelectedTime}) => {
     const [selectedDate, setSelectedDate] = useState(new Date());
@@ -109,14 +111,14 @@ export const MovieTickets = ({selectedMovie, selectedTime, setSelectedMovie, set
             <div className='buyTicketContainer'>
             <div className='buyTicket' onClick={handleBuyTicket}>
                 <p>Buy</p>
-                <img className='ticketImg' src="./src/assets/tickets.png" alt="Buy Tickets" width="30px"/>
+                <img className='ticketImg' src={ticketIcon} alt="Buy Tickets" width="30px"/>
               </div>
               </div>
               {errorMessage && <div className="error">{errorMessage}</div>} 
             <div className='flex-movieInfo'><p id='moviePlayTime'>Playtime: {selectedMovie.playtime}</p>
             <div className="flex-rating">
                 <p>{selectedMovie.rating}</p>
-                <img src="./src/assets/star.png" width="20px" height="20px" alt="Rating Star"/>
+                <img src={starIcon} width="20px" height="20px" alt="Rating Star"/>
               </div>
               </div>
           </div>

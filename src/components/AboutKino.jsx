@@ -5,7 +5,7 @@ export const AboutKino = () => {
     return (
       <div className='aboutContainer'>
         <h1>About us</h1>
-        <div className=''>
+        <div className='aboutInfo'>
           <p>
             Fjell Kino er din lokale kino, plassert midt i hjertet av Fjell. Vi
             tilbyr de nyeste filmene i moderne saler med topp lyd og bilde. Med

@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 
 
 export const Accessibility = () => {
-  const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("selectedTheme") === "dark");
+  const storedTheme = localStorage.getItem("selectedTheme") || "dark";
+  const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("selectedTheme") !== "light");
     
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
