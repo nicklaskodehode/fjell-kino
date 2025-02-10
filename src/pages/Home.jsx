@@ -3,7 +3,7 @@ import { upcomingMovieData, actionMovieData, comedyMovieData, scifiMovieData, an
 import { MovieGrid } from "../components/MovieGrid"
 import { useNavigate } from "react-router-dom"
 
-export const Home = ({setSelectedMovie, setSelectedTime, selectedMovie, selectedTime}) => {
+export const Home = ({setSelectedMovie, setSelectedTime}) => {
     const navigate = useNavigate();
     const handleSelectedMovieTime = (movie,time) => {
 
