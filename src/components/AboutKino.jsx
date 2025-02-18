@@ -14,7 +14,7 @@ export const AboutKino = () => {
           </p>
           <p>We are open every day 10:00 - 02:00</p>
         </div>
-        <img src='./src/assets/FjellKino.png' width="500px" alt='Fjell Kino Image'/> 
+        <img src='/assets/FjellKino.png' width="500px" alt='Fjell Kino Image'/> 
       </div>
     );
 }
