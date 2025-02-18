@@ -15,7 +15,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home setSelectedMovie={setSelectedMovie} setSelectedTime={setSelectedTime} selectedMovie={selectedMovie} selectedTime={selectedTime}/>}></Route>
+        <Route path='/home' element={<Home setSelectedMovie={setSelectedMovie} setSelectedTime={setSelectedTime} selectedMovie={selectedMovie} selectedTime={selectedTime}/>}></Route>
         <Route path="/tickets" element={<Tickets selectedMovie={selectedMovie} setSelectedMovie={setSelectedMovie} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
