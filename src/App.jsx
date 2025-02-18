@@ -15,10 +15,10 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path='/home' element={<Home setSelectedMovie={setSelectedMovie} setSelectedTime={setSelectedTime} selectedMovie={selectedMovie} selectedTime={selectedTime}/>}></Route>
-        <Route path="/tickets" element={<Tickets selectedMovie={selectedMovie} setSelectedMovie={setSelectedMovie} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>}></Route>
-        <Route path="/about" element={<About/>}></Route>
-        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path='fjellkino/' element={<Home setSelectedMovie={setSelectedMovie} setSelectedTime={setSelectedTime} selectedMovie={selectedMovie} selectedTime={selectedTime}/>}></Route>
+        <Route path="fjellkino/tickets" element={<Tickets selectedMovie={selectedMovie} setSelectedMovie={setSelectedMovie} selectedTime={selectedTime} setSelectedTime={setSelectedTime}/>}></Route>
+        <Route path="fjellkino/about" element={<About/>}></Route>
+        <Route path="fjellkino/contact" element={<Contact/>}></Route>
       </Routes>
       <Footer />
     </div>
